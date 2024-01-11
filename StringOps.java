@@ -69,6 +69,7 @@ public class StringOps {
         {
                 if (string.charAt(i) == ' ') //checks if there was a space before the char
                 {
+                    count++;
                     char charToAdd = Character.toUpperCase(string.charAt(i+1)); // make it caps lock
                     //System.out.println(charToAdd);
                     if (charToAdd != ' ')
