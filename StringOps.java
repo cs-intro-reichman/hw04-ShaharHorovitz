@@ -64,6 +64,7 @@ public class StringOps {
 
     public static String camelCase (String string) {
         String new_string = "";
+        int count = 0;
         for (int i = 0; i<string.length(); i++)
         {
                 if (string.charAt(i) == ' ') //checks if there was a space before the char
@@ -72,6 +73,10 @@ public class StringOps {
                     //System.out.println(charToAdd);
                     if (charToAdd != ' ')
                     {
+                        if (count-1 == i)
+                        {
+                            charToAdd = Character.toLowerCase(charToAdd);
+                        }
                         new_string = new_string + charToAdd;
                         i ++;
                     }
