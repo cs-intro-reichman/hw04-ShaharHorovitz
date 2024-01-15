@@ -47,9 +47,25 @@ public class ArrayOps {
         }
         return max; 
     }
+    public static int countNum(int [] array, int num)
+    {
+        int count = 0;
+        for(int i=0; i<array.length; i++)
+        {
+            if (array[i]==num)
+            {
+                count++;
+            }
+        }
+        return count; 
+    }
 
     public static int secondMaxValue(int [] array) {
         int max = findMax(array);
+        if (countNum(array, max)>1)
+        {
+            return max;
+        }
         int secound_max = max -1;
         for (int i = 0; i<array.length; i++) //go through every elemnet in the array
         {
