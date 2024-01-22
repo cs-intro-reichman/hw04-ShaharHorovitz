@@ -38,7 +38,7 @@ public class StringOps {
             if (isVowel(string.charAt(i)))
             {
                 char_to_add = string.charAt(i);
-                char_to_add = Character.toUpperCase(char_to_add);
+                char_to_add = Character.toUpperCase(char_to_add); // TODO: Not allowed method to use in the exercise!
                 new_string = new_string + char_to_add; //make it upper case if the charcter is a vowel 
             }
             else 
