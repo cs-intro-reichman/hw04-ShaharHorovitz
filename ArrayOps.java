@@ -1,13 +1,13 @@
 public class ArrayOps {
     public static void main(String[] args)
     {
-        int[] array1 = {1, -2, 3};
-        int [] array2 = {1, 2, 1, 1, 2};
-        int num = 4;
-        //System.out.println("the num " + num +"is in the array " + isInArray(array, num));
-        //System.out.println("the missing number in the array is " + findMissingInt(array));
-        //System.out.println("the secound max is " + secondMaxValue(array));
-        System.out.println("the array is sorted " + isSorted(array1));
+        // int[] array1 = {1, -2, 3};
+        // int [] array2 = {1, 2, 1, 1, 2};
+        // int num = 4;
+        // //System.out.println("the num " + num +"is in the array " + isInArray(array, num));
+        // //System.out.println("the missing number in the array is " + findMissingInt(array));
+        // //System.out.println("the secound max is " + secondMaxValue(array));
+        // System.out.println("the array is sorted " + isSorted(array1));
 
     }
     
@@ -66,7 +66,7 @@ public class ArrayOps {
         {
             return max;
         }
-        int secound_max = max -1;
+        int secound_max = max -1; // TODO: second :) also put space... max - 1;
         for (int i = 0; i<array.length; i++) //go through every elemnet in the array
         {
             if (isInArray(array, secound_max))
@@ -78,6 +78,8 @@ public class ArrayOps {
         return secound_max;
     }
 
+    // TODO: containsTheSameElements(new int[]{1,2},new int[]{1,2,3}); returns true
+    //   that is incorrect!
     public static boolean containsTheSameElements(int [] array1,int [] array2) {
         for (int i =0; i<array1.length; i++) //go through every element in the first array
         {
